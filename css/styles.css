@@ -1,6 +1,15 @@
+:root {
+    --primary-color: #E0731D;
+    --secondary-color: #3A3026;
+    --tertiary-color: #BFBFB3;
+    --quaternary-color: #525251;
+    --quinary-color: #FFFFFF;
+}
 * {
     font-family: 'Courier New', Courier, monospace;
 }
+
+
 nav {
     background-color: #525251;
     width: 100%;
@@ -8,7 +17,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo{
     display: flex;
     align-items: center;
@@ -45,15 +53,18 @@ nav a {
     font-size: 20px;
 }
 
-.link-btn {
-    background-color: #E0731D;
+button a {
     color: white;
+}
+
+.link-btn {
+    background-color: #E0731D !important;
+    color: white !important;
     padding: 10px 20px;
-    border: none;
+    border: none !important;
     border-radius: 5px;
     text-decoration: none;
-    height: 24px;
-    margin: 16px;    
+
 }
 
 
@@ -232,3 +243,44 @@ h2 {
     -webkit-background-clip: text;
     color: transparent; 
 } */
+
+
+/* Estilos para tamaños de pantalla pequeños (por ejemplo, dispositivos móviles) */
+@media (max-width: 767px) {
+    footer ul li {
+        font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+
+footer {
+    background-color: #525251;
+    color: #E0731D;
+    text-align: start;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+}
+.logo{
+    display: none;
+}
+.social-media{
+    flex-direction: row;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+section {
+    width: 100%;
+
+}
+.content-form {
+    width: 100%;
+    padding-bottom: 20px;
+}
+}
